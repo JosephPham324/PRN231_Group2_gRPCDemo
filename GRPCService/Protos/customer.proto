@@ -13,8 +13,8 @@ message Empty{}
 
 message IDRequest{
 	string Id=1;
-
 }
+
 message Customer{
 	string Id=1;
 	string Name=2;

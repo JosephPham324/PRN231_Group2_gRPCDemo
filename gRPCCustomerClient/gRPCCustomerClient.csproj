@@ -11,6 +11,11 @@
     <None Remove="Protos\customer.proto" />
     <None Remove="Protos\greet.proto" />
   </ItemGroup>
+	
+	<ItemGroup>
+		<Protobuf Include="Protos\customer.proto" GrpcServices="Client" />
+		<Protobuf Include="Protos\greet.proto" GrpcServices="Client" />
+	</ItemGroup>
 
 	<ItemGroup>
 		<PackageReference Include="Google.Protobuf" Version="3.25.2" />
@@ -22,9 +27,6 @@
 	  <ProjectReference Include="..\GRPCService\GRPCService.csproj" />
 	</ItemGroup>
 
-	<ItemGroup>
-	  <Protobuf Include="Protos\customer.proto" GrpcServices="Client" />
-	  <Protobuf Include="Protos\greet.proto" GrpcServices="Client" />
-	</ItemGroup>
+	
 
 </Project>
